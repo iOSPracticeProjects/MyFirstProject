@@ -10,35 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let name = "text change"
-
-    @IBOutlet weak var myLable: UILabel!
-    @IBOutlet var mylbl: UILabel!
+    @IBOutlet weak var lblhello: UILabel!
     
-    @IBAction func btnClicked(_ sender: Any) {
-        
 
-        myLable.text = name
-        myLable.textColor = UIColor .red
-        
-        mylbl.text = "this is Second Lbl"
-        
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
-        //myLable.text = name
-        
-        print(name)
-        
+                
         
     }
-
-
+    
+    
+    @IBAction func printHello(_ sender: Any) {
+        print("hello button clicked")
+        lblhello.text = "hello World"
+        
+    }
+    
+    @IBAction func deletehello(_ sender: Any) {
+        print("delete button clicked")
+        lblhello.text = " "
+        
+    }
+    
+    
 }
 
